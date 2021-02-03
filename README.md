@@ -10,8 +10,7 @@ This repository is a collection of functions practicing working with Boolean Alg
     ~x = NOT x
 
 **Boolean Functions with Two Variables**
-|             | x               | 0 0 1 1 |
-|             | y               | 0 1 0 1 |
+|             | x <br> y        | 0 0 1 1 <br> 0 1 0 1 | 
 | :---------- | :-------------: | ------: |
 | Constant 0  | 0               | 0 0 0 0 |
 | And         | x * y           | 0 0 0 1 |
