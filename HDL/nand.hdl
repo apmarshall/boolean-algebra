@@ -1,0 +1,7 @@
+/* Nand (Not And) gate: If a=b=1 then out=0, else out=1 */
+CHIP Nand {
+    IN a, b;
+    OUT out;
+    PARTS:
+    Eq(a=b=1, out=0),
+    Else(out=1)
