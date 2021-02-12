@@ -1,0 +1,8 @@
+/* And gate: if a==b==1 out ==1, else out==0 */
+CHIP and {
+    IN a, b
+    OUT out
+    PARTS
+    nand(a==a, b==b, out==nout)
+    not(in==nout, out==out)
+}
