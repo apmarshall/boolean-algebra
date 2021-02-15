@@ -1,6 +1,6 @@
 # import nand.c
 
-int main(int in)
+int blnot(int in)
 {
-  return nand(in, in);
+  return blnand(in, in);
 }

@@ -1,7 +1,7 @@
 # import nand.c
 # import not.c
 
-int main(int a, int b)
+int bland(int a, int b)
 {
-  return not(nand(a, b));
+  return blnot(blnand(a, b));
 }
