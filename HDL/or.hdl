@@ -1,0 +1,9 @@
+/* Or gate: if a=b=0, out=0, else out=1 */
+CHIP or {
+    IN a, b
+    OUT out
+    PARTS
+    not(in=a, out=nota)
+    not(in=b, out=notb)
+    nand(a=nota, b=notb, out=out)
+}
