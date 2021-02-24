@@ -1,0 +1,10 @@
+ /* Xor Gate: if a != b, out = 1; else, out = 0 */
+CHIP xor {
+     IN a, b
+     OUT out
+     PARTS
+     nand(a=a, b=b, out=nandout)
+     and(a=a, b=nandout, out=anda)
+     and(a=b, b=nandout, out=andb)
+     or(a=anda, b=andb, out=out)
+}
