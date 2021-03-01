@@ -1,0 +1,12 @@
+/* De-multiplexor: if sel=0, a=in, b=0, else a=0, b=in */
+
+CHIP demux {
+    IN in, sel
+    OUT a,b
+    PARTS
+    and(a=in, b=sel, out=b)
+    xor(a=in, b=sel, out=xora)
+    not(in=sel, out=nsel)
+    or(a=in, b=nsel, out=ora)
+    and(a=xora, b=ora, out=a)
+}
