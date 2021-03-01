@@ -1,0 +1,10 @@
+/* Multiplexor gate: if sel=0, out=a, else out=b */
+CHIP mux {
+    IN a,b,sel
+    OUT out
+    PARTS
+    or(a=a, b=sel, out=ora)
+    or(a=b, b=sel, out=orb)
+    xor(a=ora, b=orb, out=xorab)
+    xor(a=xorab, b=sel, out=out)
+}
