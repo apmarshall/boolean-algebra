@@ -1,0 +1,8 @@
+/* 16-bit implementation of xor gate */
+CHIP xor_word {
+    IN a[0-15], b[0-15]
+    OUT out[0-15]
+    PARTS
+    xor_byte(a=a[0-7], b=b[0-7], out=out[0-7]
+    xor_byte(a=a[8-15], b=b[8-15], out=out[8-15]
+}
