@@ -1,5 +1,5 @@
 /* 8-bit implementation of nand gate */
-CHIP and_byte {
+CHIP nand_byte {
     IN a[0-7], b[0-7]
     OUT out[0-7]
     PARTS

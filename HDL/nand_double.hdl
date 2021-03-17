@@ -1,5 +1,5 @@
 /* 32-bit implementation of nand gate */
-CHIP and_double {
+CHIP nand_double {
     IN a[0-31], b[0-31]
     OUT out[0-31]
     PARTS
