@@ -1,0 +1,14 @@
+/* 8-bit implementation of demux gate */
+CHIP demux_byte {
+    IN in[0-7], sel
+    OUT a[0-7], b[0-7]
+    PARTS
+    demux(in=out[0], sel=sel, a=a[0], b=b[0])
+    demux(in=out[1], sel=sel, a=a[1], b=b[1])
+    demux(in=out[2], sel=sel, a=a[2], b=b[2])
+    demux(in=out[3], sel=sel, a=a[3], b=b[3])
+    demux(in=out[4], sel=sel, a=a[4], b=b[4])
+    demux(in=out[5], sel=sel, a=a[5], b=b[5])
+    demux(in=out[6], sel=sel, a=a[6], b=b[6])
+    demux(in=out[7], sel=sel, a=a[7], b=b[7])
+}

@@ -1,0 +1,8 @@
+/* 16-bit implementation of demux gate */
+CHIP demux_word {
+    IN in[0-15], sel
+    OUT a[0-15], b[0-15]
+    PARTS
+    demux_byte(in=out[0-7], sel=sel, a=a[0-7], b=b[0-7])
+    demux_byte(in=out[8-15], sel=sel, a=a[8-15], b=b[8-15])
+}

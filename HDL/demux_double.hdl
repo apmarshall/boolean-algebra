@@ -1,0 +1,8 @@
+/* 32-bit implementation of demux gate */
+CHIP demux_double {
+    IN in[0-31], sel
+    OUT a[0-31], b[0-31]
+    PARTS
+    demux_word(in=out[0-15], sel=sel, a=a[0-15], b=b[0-15])
+    demux_word(in=out[16-31], sel=sel, a=a[16-31], b=b[16-31])
+}

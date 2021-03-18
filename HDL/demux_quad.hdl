@@ -1,0 +1,8 @@
+/* 64-bit implementation of demux gate */
+CHIP demux_quad {
+    IN in[0-63], sel
+    OUT a[0-63], b[0-63]
+    PARTS
+    demux_word(in=out[0-31], sel=sel, a=a[0-31], b=b[0-31])
+    demux_word(in=out[32-63], sel=sel, a=a[32-63], b=b[32-63])
+}
