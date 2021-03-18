@@ -1,0 +1,8 @@
+/* 64-bit implementation of mux gate */
+CHIP mux_double {
+    IN a[0-63], b[0-63], sel
+    OUT out[0-63]
+    PARTS
+    mux_double(a=a[0-31], b=b[0-31], sel=sel, out=out[0-31])
+    mux_double(a=a[32-63], b=b[32-63], sel=sel, out=out[32-63])
+}

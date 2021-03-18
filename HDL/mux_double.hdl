@@ -1,0 +1,8 @@
+/* 32-bit implementation of mux gate */
+CHIP mux_double {
+    IN a[0-31], b[0-31], sel
+    OUT out[0-31]
+    PARTS
+    mux_word(a=a[0-15], b=b[0-15], sel=sel, out=out[0-15])
+    mux_word(a=a[16-31], b=b[16-31], sel=sel, out=out[16-31])
+}

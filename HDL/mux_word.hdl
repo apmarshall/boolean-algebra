@@ -1,0 +1,8 @@
+/* 16-bit implementation of mux gate */
+CHIP mux_word {
+    IN a[0-15], b[0-15], sel
+    OUT out[0-15]
+    PARTS
+    mux_byte(a=a[0-7], b=b[0-7], sel=sel, out=out[0-7])
+    mux_byte(a=a[8-15], b=b[8-15], sel=sel, out=out[8-15])
+}
