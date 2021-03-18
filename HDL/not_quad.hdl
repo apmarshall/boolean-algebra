@@ -1,0 +1,8 @@
+/* 64-bit implementation of not gate */
+CHIP not_double {
+    IN a[0-63]
+    OUT out[0-63]
+    PARTS
+    not_double(a=a[0-31], out=out[0-31])
+    not_double(a=a[32-63], out=out[32-63])
+}

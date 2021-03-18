@@ -1,0 +1,8 @@
+/* 16-bit implementation of not gate */
+CHIP not_word {
+    IN a[0-15]
+    OUT out[0-15]
+    PARTS
+    not_byte(a=a[0-7], out=out[0-7])
+    not_byte(a=a[8-15], out=out[8-15])
+}

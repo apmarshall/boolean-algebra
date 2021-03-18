@@ -1,0 +1,14 @@
+/* 8-bit implementation of not gate */
+CHIP not_byte {
+    IN a[0-7]
+    OUT out[0-7]
+    PARTS
+    not(a=a[0], out=out[0])
+    not(a=a[1], out=out[1])
+    not(a=a[2], out=out[2])
+    not(a=a[3], out=out[3])
+    not(a=a[4], out=out[4])
+    not(a=a[5], out=out[5])
+    not(a=a[6], out=out[6])
+    not(a=a[7], out=out[7])
+}
