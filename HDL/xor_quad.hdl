@@ -3,6 +3,6 @@ CHIP xor_double {
     IN a[0-63], b[0-63]
     OUT out[0-63]
     PARTS
-    xor_double(a=a[0-31], b=b[0-31], out=out[0-31]
-    xor_double(a=a[32-63], b=b[32-63], out=out[32-63]
+    xor_double(a=a[0-31], b=b[0-31], out=out[0-31])
+    xor_double(a=a[32-63], b=b[32-63], out=out[32-63])
 }

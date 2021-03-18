@@ -3,6 +3,6 @@ CHIP nand_double {
     IN a[0-31], b[0-31]
     OUT out[0-31]
     PARTS
-    nand_word(a=a[0-15], b=b[0-15], out=out[0-15]
-    nand_word(a=a[16-31], b=b[16-31], out=out[16-31]
+    nand_word(a=a[0-15], b=b[0-15], out=out[0-15])
+    nand_word(a=a[16-31], b=b[16-31], out=out[16-31])
 }
